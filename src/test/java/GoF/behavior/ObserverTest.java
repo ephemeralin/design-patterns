@@ -6,10 +6,10 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class BehaviorTest {
+public class ObserverTest {
 
     @Test
-    public void ObserverTest() {
+    public void SubscribeUnsubscribeTest() {
         Shop shop = new Shop();
         Customer firstCustomer = new Customer();
         Customer secondCustomer = new Customer();
