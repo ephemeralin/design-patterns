@@ -2,9 +2,25 @@ package gof.creational.factory_method;
 
 public abstract class Pizza {
 
-    public abstract void addIngredients();
+    protected String name;
+    protected String ingredients;
+    protected boolean baked;
 
-    public void bakePizza() {
-        System.out.println("Pizza baked at 400 for 20 minutes");
+    @Override
+    public String toString() {
+        return (baked ? "Baked " : "Raw ") + name +
+                ((ingredients == null || ingredients.equals("")) ? "" : " with ") + ingredients;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getIngredients() {
+        return ingredients;
+    }
+
+    public boolean isBaked() {
+        return baked;
     }
 }
