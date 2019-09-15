@@ -1,10 +1,12 @@
-package gof.structural.facade;
+package gof.structural;
 
+import gof.structural.facade.OrderServiceFacade;
+import gof.structural.facade.OrderServiceFacadeImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
 
-public class OrderServiceFacadeImplTest {
+public class FacadeTest {
 
     @Test
     public void placeOrderTest() {
